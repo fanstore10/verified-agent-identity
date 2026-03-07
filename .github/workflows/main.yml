@@ -4,13 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       agent_name:
-        description: 'ifandiffrents'
+        description: 'fanstore10'
         required: true
-        default: 'ifandiffrents'
+        default: 'fanstore10'
       agent_description:
-        description: 'ifandiffrents'
+        description: 'fanstore10'
         required: true
-        default: 'ifamdiffrents AI Agent'
+        default: 'fanstore10 AI Agent'
 
 jobs:
   verify:
@@ -38,5 +38,4 @@ jobs:
 
       - name: Step 3 - Link Human to Agent
         run: |
-          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "ifandiffrents", "description": "ifandiffrents AI Agent"}'
-          
+          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "fanstore10", "description": "fanstore10 AI Agent"}'
